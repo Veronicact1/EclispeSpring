@@ -2,9 +2,10 @@ package com.examen;
 
 import org.springframework.stereotype.Component;
 
-@Component("Professor")
+@Component
         public class ProfesorInformatica implements Profesor {
-        public String getProfessor() {
+        private EntrenamientoServicio entrenamientoServicio;
+		public String getProfessor() {
         return "Escrie un programma";
         }
 
