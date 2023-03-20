@@ -5,21 +5,20 @@
 <html>
 
 <head>
-	<title>Lista de Clientes</title>
+	<title>List Customers</title>
 	
 	<!-- reference our style sheet -->
 
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/style.css" />
-
 </head>
 
 <body>
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>CRM - Gestión de Clientes</h2>
+			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
 	</div>
 	
@@ -38,10 +37,10 @@
 		
 			<table>
 				<tr>
-					<th>Nombre</th>
-					<th>Apellidos</th>
-					<th>Correo</th>
-					<th>Acciones</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Action</th>
 				</tr>
 				
 				<!-- loop over and print our customers -->
@@ -64,10 +63,10 @@
 						
 						<td>
 							<!-- display the update link -->
-							<a href="${updateLink}">Actualizar</a>
+							<a href="${updateLink}">Update</a>
 							|
 							<a href="${deleteLink}"
-							   onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Eliminar</a>
+							   onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
 						</td>
 						
 					</tr>
